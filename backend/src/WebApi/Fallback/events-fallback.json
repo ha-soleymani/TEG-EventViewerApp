@@ -1,0 +1,151 @@
+{
+  "events": [
+    {
+      "id": 10000,
+      "name": "10cc In Concert",
+      "startDate": "2022-11-10T12:00:00Z",
+      "venueId": 121
+    },
+    {
+      "id": 10001,
+      "name": "Johnny Cash The Concert",
+      "startDate": "2023-03-03T12:00:00Z",
+      "venueId": 123
+    },
+    {
+      "id": 10002,
+      "name": "Play School Live in Concert",
+      "startDate": "2022-10-05T23:00:00Z",
+      "venueId": 123
+    },
+    {
+      "id": 10003,
+      "name": "The Guilty Feminist Live Podcast",
+      "startDate": "2022-07-13T10:30:00Z",
+      "venueId": 919
+    },
+    {
+      "id": 10004,
+      "name": "Dirty Dancing In Concert",
+      "startDate": "2022-06-10T10:00:00Z",
+      "venueId": 125
+    },
+    {
+      "id": 10005,
+      "name": "Dirty Dancing In Concert",
+      "startDate": "2022-06-11T10:00:00Z",
+      "venueId": 125
+    },
+    {
+      "id": 10006,
+      "name": "Dirty Dancing In Concert",
+      "startDate": "2022-06-25T10:00:00Z",
+      "venueId": 10029
+    },
+    {
+      "id": 10007,
+      "name": "Dirty Dancing In Concert",
+      "startDate": "2022-06-25T05:30:00Z",
+      "venueId": 10029
+    },
+    {
+      "id": 10008,
+      "name": "Dirty Dancing In Concert",
+      "startDate": "2022-06-18T10:00:00Z",
+      "venueId": 125
+    },
+    {
+      "id": 10009,
+      "name": "Dirty Dancing In Concert",
+      "startDate": "2022-06-18T05:30:00Z",
+      "venueId": 10029
+    },
+    {
+      "id": 122,
+      "name": "TegTalk",
+      "startDate": "2023-06-10T10:00Z",
+      "description": "A much anticipated talk on all things TEG.",
+      "venueId": 125
+    },
+    {
+      "id": 1002,
+      "name": "Learn to Code! 101",
+      "startDate": "2023-06-11T09:00Z",
+      "description": "A basic workshop for going from zero to hero as a coder!",
+      "venueId": 125
+    },
+    {
+      "id": 192,
+      "name": "Master the Art of Coding Challenges",
+      "startDate": "2023-07-23T08:00Z",
+      "description": "The be all end all seminar on smashing every coding challenge thrown at you!",
+      "venueId": 125
+    },
+    {
+      "id": 998,
+      "name": "A night at the TEG Technology Museum",
+      "startDate": "2023-06-03T14:00Z",
+      "description": "An immersive overnight experience showcasing TEG's rich history of technology dating back all the way to the,1970s!",
+      "venueId": 10029
+    },
+    {
+      "id": 500,
+      "name": "Coding Lab: handling errors with grace.",
+      "description": "A coding lab hosted by one of our very own Tech Leads showcasing best practices for handling errors",
+      "VenueID": 404
+    },
+    {
+      "id": 81,
+      "name": "Futurology of Ticketing",
+      "startDate": "2023-06-22T10:00Z",
+      "description": "An interactive seminar on the latest trends and future expectations surrounding the world of ticketing.",
+      "venueId": 919
+    },
+    {
+      "id": 922,
+      "name": "Inversion of Control",
+      "description": "Lost control of all your senses with this year's immersive light show Inversion of Control!",
+      "startDate": "2023-06-01T10:00Z",
+      "venueId": 919
+    },
+    {
+      "id": 923,
+      "name": "Dreaming of Electric Sheep",
+      "description": "A late night experience for the Androids in our world.",
+      "startDate": "2023-06-03T09:00Z",
+      "venueId": 919
+    }
+  ],
+  "venues": [
+    {
+      "id": 121,
+      "name": "The Coding Theatre",
+      "capacity": 450,
+      "location": "TEG Metaverse"
+    },
+    {
+      "id": 123,
+      "name": "TEG Stadium",
+      "capacity": 65000,
+      "location": "London, UK"
+    },
+    {
+      "id": 125,
+      "name": "TEG Office Level 14",
+      "capacity": 56,
+      "location": "Sydney, Australia"
+    },
+    {
+      "id": 919,
+      "name": "The TEG Observatory",
+      "capacity": 150,
+      "location": "Auckland, New Zealand"
+    },
+    {
+      "id": 10029,
+      "name": "TEG Technology Museum",
+      "capacity": 600,
+      "location": "Singapore"
+    }
+  ]
+}

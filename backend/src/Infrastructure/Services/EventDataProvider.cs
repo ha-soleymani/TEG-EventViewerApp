@@ -1,6 +1,7 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 using Infrastructure.Config;
+using Infrastructure.Extentions;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -32,22 +33,25 @@ namespace Infrastructure.Services
         {
             try
             {
+                _logger.LogInformation("Fetching events from {Endpoint}", _options.EventDtaEndpoint);
+
                 var res = await _http.GetAsync(_options.EventDtaEndpoint);
                 res.EnsureSuccessStatusCode();
                 var json = await res.Content.ReadAsStringAsync();
+                
+                _logger.LogInformation("Successfully fetched events data");
+
                 return ParseEvents(json, venueId);
             }
             catch (Exception ex)
             {
-                _logger.LogWarning(ex, "Primary source failed. Using fallback data.");
-                var fallbackPath = Path.Combine(_env.ContentRootPath, "Fallback", "events-fallback.json");
-                if (!File.Exists(fallbackPath))
+                var fallbackJson = await DataProviderExtentions.GetFallbackDataAsync(_env.ContentRootPath, _logger);
+                
+                if(string.IsNullOrEmpty(fallbackJson))
                 {
-                    _logger.LogError("Fallback file missing at {Path}", fallbackPath);
+                    _logger.LogError(ex, "Failed to fetch events and no fallback data available");
                     return [];
                 }
-
-                var fallbackJson = await File.ReadAllTextAsync(fallbackPath);
                 return ParseEvents(fallbackJson, venueId);
             }
         }
