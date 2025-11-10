@@ -1,4 +1,4 @@
-﻿﻿# 🎟️ Event Viewer App
+# 🎟️ Event Viewer App
 
 A responsive, cloud-hosted web application built with .NET 8 and React. It displays events by venue, handles unreliable data sources with fallback logic, and follows Clean Architecture principles for maintainability and testability.
 
