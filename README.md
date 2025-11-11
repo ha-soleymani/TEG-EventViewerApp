@@ -8,7 +8,6 @@ A responsive, cloud-hosted web application built with .NET 8 and React. It displ
 - **Frontend**: React 18, TypeScript, Bootstrap 5
 - **Resilience**: Polly (fallback + retry)
 - **Testing**: xUnit, Moq, RichardSzalay.MockHttp, Jest, Testing Library
-- **Hosting**: Azure App Service / AWS Amplify
 
 ## 🛠️ Getting Started
 
@@ -37,7 +36,7 @@ Frontend will be available at http://localhost:5173.
 🧪 Running Tests
 ## Backend Tests
 ```bash
-cd src/EventViewer.Tests
+cd ackend/test/Application.Tests
 dotnet test
 ````
 ## Frontend Tests
@@ -48,7 +47,7 @@ npm test
 
 ## 🧯 Fallback Strategy
 If the external event API is unavailable, the backend automatically loads a local fallback file located at:
-/Fallback/events-fallback.json
+backend/src/WebApi/Fallback/events-fallback.json
 
 
 Ensure this file is deployed with your API.
